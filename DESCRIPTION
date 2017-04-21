@@ -1,0 +1,20 @@
+Package: tidyclm
+Title: Provides Methods for Functions in the \code{broom} Package for \code{clm} Objects
+Version: 0.0.0.9000
+Authors@R: person("David", "Barron",
+                  email = "dnbarron@gmail.com", 
+                  role = c("aut", "cre"))
+Description: This package provides methods for the \code{tidy}, \code{tidy.summary}, 
+    and \code{glance} generics in the \code{broom} package.  It also provides functions to
+    obtain standard errors when data are clustered.
+Depends: R (>= 3.3.3)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: broom,
+    ordinal,
+    lmtest,
+    sandwich
+RoxygenNote: 6.0.1
+Suggests: plyr,
+    stringr
