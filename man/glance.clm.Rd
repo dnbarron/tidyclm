@@ -4,7 +4,7 @@
 \alias{glance.clm}
 \title{Glance method for \code{clm} objects}
 \usage{
-glance.clm(x, ...)
+\method{glance}{clm}(x, ...)
 }
 \arguments{
 \item{x}{clm object}
@@ -19,7 +19,7 @@ Glance method for \code{clm} objects
 }
 \examples{
 \dontrun{
-#' require(ordinal)
+require(ordinal)
 fm1 <- clm(rating ~ temp * contact, data = wine)
 glance(fm1)
 }

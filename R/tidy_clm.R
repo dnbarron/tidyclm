@@ -17,6 +17,8 @@
 #' @return tidy data frame
 #' @export
 #'
+#' @importFrom broom tidy
+#'
 #' @examples
 #' \dontrun{
 #' require(ordinal)
@@ -69,7 +71,7 @@ unrowname <- function(x){
 #'
 #' @examples
 #' \dontrun{
-#' #' require(ordinal)
+#' require(ordinal)
 #' fm1 <- clm(rating ~ temp * contact, data = wine)
 #' tidy(summary(fm1))
 #' }
@@ -107,9 +109,11 @@ tidy.summary.clm <- function(x, cluster = FALSE, vcov = NULL, digits = 2, ...){
 #' @return data frame
 #' @export
 #'
+#' @importFrom broom glance
+#'
 #' @examples
 #' \dontrun{
-#' #' require(ordinal)
+#' require(ordinal)
 #' fm1 <- clm(rating ~ temp * contact, data = wine)
 #' glance(fm1)
 #' }

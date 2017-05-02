@@ -4,8 +4,9 @@
 \alias{tidy.clm}
 \title{Tidy method for \code{clm} objects.}
 \usage{
-tidy.clm(x, conf.int = FALSE, conf.level = 0.95, exponentiate = FALSE,
-  quick = FALSE, cluster = FALSE, vcov = NULL, ...)
+\method{tidy}{clm}(x, conf.int = FALSE, conf.level = 0.95,
+  exponentiate = FALSE, quick = FALSE, cluster = FALSE, vcov = NULL,
+  ...)
 }
 \arguments{
 \item{x}{clm object}

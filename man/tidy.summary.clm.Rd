@@ -4,7 +4,8 @@
 \alias{tidy.summary.clm}
 \title{Tidy method for summaries of \code{clm} objects}
 \usage{
-tidy.summary.clm(x, cluster = FALSE, vcov = NULL, digits = 2, ...)
+\method{tidy}{summary.clm}(x, cluster = FALSE, vcov = NULL, digits = 2,
+  ...)
 }
 \arguments{
 \item{x}{clm object}
@@ -25,7 +26,7 @@ Tidy method for summaries of \code{clm} objects
 }
 \examples{
 \dontrun{
-#' require(ordinal)
+require(ordinal)
 fm1 <- clm(rating ~ temp * contact, data = wine)
 tidy(summary(fm1))
 }
