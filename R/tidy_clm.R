@@ -96,7 +96,7 @@ tidy.summary.clm <- function(x, cluster = FALSE, vcov = NULL, digits = 2, ...){
     }
     ret[, 'std.error'] <- vcov
     ret[, 'statistic'] <- ret[, 'estimate'] / vcov
-    ret[, 'p.value'] <- pnorm(abs(ret[, 'statistic']), lower.tail = FALSE) * 2
+    ret[, 'p.value'] <- pnorm(abs(ret[, 'statistic', drop = TRUE]), lower.tail = FALSE) * 2
   }
   ret
 }
