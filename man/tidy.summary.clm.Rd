@@ -4,8 +4,8 @@
 \alias{tidy.summary.clm}
 \title{Tidy method for summaries of \code{clm} objects}
 \usage{
-\method{tidy}{summary.clm}(x, cluster = FALSE, vcov = NULL, digits = 2,
-  ...)
+\method{tidy}{summary.clm}(x, cluster = FALSE, vcov = NULL,
+  digits = 2, ...)
 }
 \arguments{
 \item{x}{clm object}
